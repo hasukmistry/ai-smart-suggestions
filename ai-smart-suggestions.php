@@ -16,3 +16,16 @@
  */
 
 declare(strict_types=1);
+
+use AISmartSuggestions\Plugin;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( ! class_exists( Plugin::class ) && is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
+	/** @noinspection PhpIncludeInspection */
+	require_once __DIR__ . '/vendor/autoload.php';
+}
+
+class_exists( Plugin::class ) && Plugin::instance()->init();
