@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace AISmartSuggestions;
 
+use AISmartSuggestions\Core\Service;
+
 /**
  * Plugin class
  *
@@ -50,5 +52,30 @@ class Plugin {
 		if ( wp_installing() ) {
 			return;
 		}
+
+		// Spin up the service config and container.
+		add_action( 'wp_loaded', array( $this, 'load' ) );
+	}
+
+	/**
+	 * Load the plugin.
+	 *
+	 * @since 1.0
+	 *
+	 * @return void
+	 */
+	public function load(): void {
+		// Bail early if the config file has not been created yet.
+		if ( ! file_exists( './config/services.yaml' ) ) {
+			return;
+		}
+
+		// Set config service.
+		Service::instance()
+			->set_config(
+				'/config',
+				'services.yaml'
+			)
+			->set_services();
 	}
 }
