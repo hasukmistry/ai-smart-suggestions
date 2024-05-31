@@ -95,6 +95,9 @@ class Service {
 		// call __invoke() method of the service classes.
 		$this->container->get( 'adminMenu' )();
 
+		$this->container->get( 'aiConfigForm' )();
+		$this->container->get( 'aiConfigPage' )();
+
 		return $this;
 	}
 

@@ -1,3 +1,9 @@
 services:
   adminMenu:
     class: \AISmartSuggestions\Admin\Menu
+
+  aiConfigForm:
+    class: \AISmartSuggestions\Admin\Actions\Ai_Config_Form
+
+  aiConfigPage:
+    class: \AISmartSuggestions\Admin\Ai_Config_Page

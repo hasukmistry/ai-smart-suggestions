@@ -51,5 +51,6 @@ class Menu {
 	 * @return void
 	 */
 	public function ai_config_page(): void {
+		Ai_Config_Page::render();
 	}
 }
