@@ -65,16 +65,19 @@ class Plugin {
 	 * @return void
 	 */
 	public function load(): void {
+		$config_dir  = plugin_dir_path( __FILE__ ) . '/config';
+		$config_file = 'services.yaml';
+
 		// Bail early if the config file has not been created yet.
-		if ( ! file_exists( './config/services.yaml' ) ) {
+		if ( ! file_exists( $config_dir . '/' . $config_file ) ) {
 			return;
 		}
 
 		// Set config service.
 		Service::instance()
 			->set_config(
-				'/config',
-				'services.yaml'
+				$config_dir,
+				$config_file
 			)
 			->set_services();
 	}
