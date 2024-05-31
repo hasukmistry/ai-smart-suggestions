@@ -1,0 +1,3 @@
+services:
+  adminMenu:
+    class: \AISmartSuggestions\Admin\Menu

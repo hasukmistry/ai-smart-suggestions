@@ -92,6 +92,9 @@ class Service {
 	 * @return self
 	 */
 	public function set_services(): self {
+		// call __invoke() method of the service classes.
+		$this->container->get( 'adminMenu' )();
+
 		return $this;
 	}
 
