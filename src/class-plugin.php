@@ -65,7 +65,7 @@ class Plugin {
 	 * @return void
 	 */
 	public function load(): void {
-		$config_dir  = AI_SS_PLUGIN_PATH . '/src/config';
+		$config_dir  = AI_SS_PLUGIN_PATH . 'src/config';
 		$config_file = 'services.yaml';
 
 		// Bail early if the config file has not been created yet.
