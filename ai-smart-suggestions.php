@@ -18,6 +18,7 @@
 declare(strict_types=1);
 
 use AISmartSuggestions\Plugin;
+use AISmartSuggestions\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -32,6 +33,10 @@ define( 'AI_SS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 if ( ! class_exists( Plugin::class ) && is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
 	/** @noinspection PhpIncludeInspection */
 	require_once __DIR__ . '/vendor/autoload.php';
+}
+
+if ( class_exists( Core\Secret::class ) ) {
+	register_activation_hook( __FILE__, array( Core\Secret::class, 'activate' ) );
 }
 
 class_exists( Plugin::class ) && Plugin::instance()->init();
