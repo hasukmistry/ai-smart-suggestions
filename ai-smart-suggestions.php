@@ -23,6 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Define the plugin path
+define( 'AI_SS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
+// Define the plugin url
+define( 'AI_SS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 if ( ! class_exists( Plugin::class ) && is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
 	/** @noinspection PhpIncludeInspection */
 	require_once __DIR__ . '/vendor/autoload.php';
