@@ -2,3 +2,7 @@
 
 # Ignore vendor directory
 /vendor
+
+node_modules/
+dist/
+*.log
