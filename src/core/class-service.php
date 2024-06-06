@@ -97,6 +97,9 @@ class Service {
 
 		$this->container->get( 'aiConfigForm' )();
 		$this->container->get( 'aiConfigPage' )();
+		$this->container->get( 'blockEditor' )();
+
+		$this->container->get( 'smartSuggestionsApi' )();
 
 		return $this;
 	}

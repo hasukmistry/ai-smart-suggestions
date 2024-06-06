@@ -7,3 +7,17 @@ services:
 
   aiConfigPage:
     class: \AISmartSuggestions\Admin\Ai_Config_Page
+
+  blockEditor:
+    class: \AISmartSuggestions\Admin\Block_Editor
+
+  aiPrompt:
+    class: \AISmartSuggestions\OpenAI\Prompt
+
+  groqcloud:
+    class: \AISmartSuggestions\Http\Groq
+    arguments:
+      prompt_manager: '@aiPrompt'   
+
+  smartSuggestionsApi:
+    class: \AISmartSuggestions\RestApi\Smart_Suggestions
