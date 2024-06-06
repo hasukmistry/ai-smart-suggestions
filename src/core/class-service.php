@@ -102,6 +102,19 @@ class Service {
 	}
 
 	/**
+	 * Get a service from the container.
+	 *
+	 * @since 1.0
+	 *
+	 * @param string $service The service to get.
+	 *
+	 * @return object
+	 */
+	public function get_service( string $service ): object {
+		return $this->container->get( $service );
+	}
+
+	/**
 	 * Register default config service.
 	 *
 	 * Keep in mind that,
