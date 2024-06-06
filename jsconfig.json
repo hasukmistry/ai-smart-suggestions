@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["block-editor/components/*"],
+            "@icons/*": ["block-editor/icons/*"],
+            "@utils/*": ["block-editor/utils/*"],
+            "@services/*": ["block-editor/services/*"],
+            "@scss/*": ["block-editor/scss/*"],
+        }
+    },
+    "include": ["block-editor"]
+}
