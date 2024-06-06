@@ -1,0 +1,34 @@
+{
+	"name": "ai-smart-suggestions",
+	"version": "0.1.0",
+	"description": "A plugin to add AI suggestions to your WordPress site content.",
+	"author": "Hasmukh K Mistry",
+	"license": "GPL-2.0-or-later",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "wp-scripts build --output-path=dist/",
+		"format": "wp-scripts format block-editor/**/*.js",
+		"lint:css": "wp-scripts lint-style block-editor",
+		"lint:js": "wp-scripts lint-js block-editor",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^28.0.0",
+		"css-loader": "^7.1.2",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"sass-loader": "^14.2.1",
+		"style-loader": "^4.0.0"
+	},
+	"dependencies": {
+		"@babel/preset-react": "^7.24.6",
+		"@wordpress/block-editor": "^13.0.0",
+		"@wordpress/blocks": "^13.0.0",
+		"@wordpress/i18n": "^5.0.0",
+		"@wordpress/primitives": "^4.0.0",
+		"lodash": "^4.17.21",
+		"path-browserify": "^1.0.1",
+		"postcss-loader": "^8.1.1",
+		"superagent": "^9.0.2"
+	}
+}
