@@ -24,5 +24,9 @@ Welcome to the AI Smart Suggestions Plugin repository. This WordPress plugin lev
 
 ### Prerequisites
 
+Before you begin, ensure you have met the following requirements:
+
 - WordPress 6.2 or higher
 - PHP 7.4 or higher
+- You have installed Docker and added support for Docker Compose commands. Instructions are available [here](https://docs.docker.com/compose/install/).
+- You have installed GNU Make utility, which is commonly used to automate the build process of software projects. Make is often pre-installed if you're using a Unix-like system (such as Linux or macOS). Run this command to verify the installation: make --version
