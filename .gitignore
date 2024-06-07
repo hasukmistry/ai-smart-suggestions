@@ -3,6 +3,14 @@
 # Ignore vendor directory
 /vendor
 
+# Ignore node modules
 node_modules/
+
+# Ignore dist directory
 dist/
+
 *.log
+
+# Ignore temp-plugin directory
+/temp-plugin
+ai-smart-suggestions.zip
