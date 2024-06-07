@@ -16,7 +16,7 @@ use AISmartSuggestions\Core\Decryption;
 
 $notice      = get_transient( Form::NOTICE_ACTION );
 $ai_provider = get_option( Form::OPTION_AI_PROVIDER );
-$ai_api_key  = Decryption::decrypt( get_option( Form::OPTION_AI_API_KEY ) );
+$ai_api_key  = get_option( Form::OPTION_AI_API_KEY ) ? Decryption::decrypt( get_option( Form::OPTION_AI_API_KEY ) ) : '';
 ?>
 <div class="wrap">
 

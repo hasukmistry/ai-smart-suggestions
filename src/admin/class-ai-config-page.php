@@ -71,7 +71,7 @@ class Ai_Config_Page {
 				),
 				'ai_provider'  => get_option( Form::OPTION_AI_PROVIDER ),
 				'ai_model'     => get_option( Form::OPTION_AI_MODEL ),
-				'ai_api_key'   => Decryption::decrypt( get_option( Form::OPTION_AI_API_KEY ) ),
+				'ai_api_key'   => get_option( Form::OPTION_AI_API_KEY ) ? Decryption::decrypt( get_option( Form::OPTION_AI_API_KEY ) ) : '',
 			)
 		);
 
