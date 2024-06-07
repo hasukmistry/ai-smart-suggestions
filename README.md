@@ -1,6 +1,6 @@
 # AI Smart Suggestions
 
-Welcome to the AI Smart Suggestions Plugin repository. This plugin leverages AI capabilities to provide intelligent text suggestions for headings and paragraphs in the Gutenberg editor. At the moment [Groq](https://console.groq.com/docs/quickstart) is the only AI provider supported by this plugin. Plugin aims to enhance writing quality and assist users in creating engaging content efficiently.
+Welcome to the AI Smart Suggestions Plugin repository. This WordPress plugin leverages AI capabilities to provide intelligent text suggestions for headings and paragraphs in the Gutenberg editor. At the moment [Groq](https://console.groq.com/docs/quickstart) is the only AI provider supported by this plugin. The plugin aims to enhance writing quality and assist users in creating engaging content efficiently.
 
 ## Table of Contents
 
