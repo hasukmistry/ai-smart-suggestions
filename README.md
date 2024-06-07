@@ -58,3 +58,53 @@ npm run build
 5. Navigate to the WordPress dashboard, go to the 'Plugins' section, and activate the AI Smart Suggestions Plugin.
 
 6. Navigate to the WordPress dashboard, go to the 'Settings' section, and click on the 'Smart Suggestions'. Configure your [Groq API key](https://console.groq.com/keys) and other settings as needed. Get up and running with AI Smart Suggestions!
+
+## Usage
+
+1. **Activate the Plugin**: Ensure the plugin is activated from the WordPress plugins dashboard.
+2. **Create or Edit a Post**: Open the Gutenberg editor by creating a new post or editing an existing one.
+3. **Receive Suggestions**: Start typing in a heading or paragraph block. New icon will appear on the block toolbar to show the Smart Suggestions.
+4. **Smart Suggestions**: Click on the Smart Suggestions icon, It will show a modal with suggestions for the current text. You can choose the suggested text and apply it to the block. Or you can click on the 'Refresh' button to get new suggestions.
+
+## Configuration
+
+Navigate to the plugin settings page under 'Settings > Smart Suggestions' to configure:
+
+- **AI Provider**: Select the AI provider you want to use. Currently, only Groq is supported.
+- **AI Model**: Select the AI model you want to use. Groq offers several [models](https://console.groq.com/docs/models), such as 'LLaMA3 8b', 'LLaMA3 70b', 'Mixtral 8x7b', and 'Gemma 7b'.
+- **API Key**: Enter your [Groq API key](https://console.groq.com/keys).
+
+## Roadmap
+
+- **v1.0**: Initial release with Groq as the only AI provider. Suggestions are provided for headings and paragraphs.
+
+## Contributing
+
+Contributions are welcomed from the community! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+Please ensure all changes adhere to the project's coding standards. Use the following commands to run the linter:
+```
+npm run lint:js
+composer phpcs
+```
+
+## License
+
+This project is licensed under the GNU General Public License version 3. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact:
+
+- **Name**: Hasmukh Mistry
+- **LinkedIn**: [hasmukh-k-mistry](https://www.linkedin.com/in/hasmukh-k-mistry/)
+- **X**: [hasukmistry](https://x.com/hasukmistry)
+- **Threads** [@el.happinio](https://www.threads.net/@el.happinio)
+
+Thank you for using the AI Smart Suggestions Plugin!
