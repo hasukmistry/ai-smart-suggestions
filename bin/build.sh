@@ -7,18 +7,12 @@ mkdir -p ./temp-plugin
 
 # 2 - Copying necessary files to temp-plugin directory
 cp ./.babelrc ./temp-plugin/.babelrc
-# cp ./.eslintignore ./temp-plugin/.eslintignore
-# cp ./.eslintrc.js ./temp-plugin/.eslintrc.js
-# cp ./.gitignore ./temp-plugin/.gitignore
-# cp ./.npmignore ./temp-plugin/.npmignore
 cp ./ai-smart-suggestions.php ./temp-plugin/ai-smart-suggestions.php
 cp ./composer.json ./temp-plugin/composer.json
 cp ./composer.lock ./temp-plugin/composer.lock
-# cp ./jsconfig.json ./temp-plugin/jsconfig.json
+cp ./LICENSE ./temp-plugin/LICENSE
 cp ./package.json ./temp-plugin/package.json
 cp ./package-lock.json ./temp-plugin/package-lock.json
-# cp ./phpcs.xml.dist ./temp-plugin/phpcs.xml.dist
-# cp ./README.md ./temp-plugin/README.md
 cp ./webpack.config.js ./temp-plugin/webpack.config.js
 
 # 3 - Copying necessary directories to temp-plugin directory
