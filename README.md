@@ -102,7 +102,7 @@ This project is licensed under the GNU General Public License version 3. See the
 
 For any questions or inquiries, please contact:
 
-- **Name**: Hasmukh Mistry
+- **Name**: Hasmukh K Mistry
 - **LinkedIn**: [hasmukh-k-mistry](https://www.linkedin.com/in/hasmukh-k-mistry/)
 - **X**: [hasukmistry](https://x.com/hasukmistry)
 - **Threads** [@el.happinio](https://www.threads.net/@el.happinio)
