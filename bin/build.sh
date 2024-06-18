@@ -6,6 +6,7 @@
 mkdir -p ./temp-plugin
 
 # 2 - Copying necessary files to temp-plugin directory
+cp ./readme.txt ./temp-plugin/readme.txt
 cp ./.babelrc ./temp-plugin/.babelrc
 cp ./ai-smart-suggestions.php ./temp-plugin/ai-smart-suggestions.php
 cp ./composer.json ./temp-plugin/composer.json
