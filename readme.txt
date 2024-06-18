@@ -1,12 +1,14 @@
 === AI Smart Suggestions ===
 Contributors: meet_hasmukh
 Donate link: https://buymeacoffee.com/hasukmistry
-Tags: AI, Artificial Intelligence, Content Suggestions, Content Enhancement, WordPress Content, Automated Suggestions, Writing Assistant, Content Creation, AI Tools, SEO, Machine Learning, Blogging Tools, Content Marketing, Productivity, WP Plugin
+Tags: AI, Content Suggestions, Smart Suggestions, AI Suggestions, AI Smart Suggestions
 Requires at least: 6.2
 Tested up to: 6.5
-Stable tag: 1.0.0
+Stable tag: 1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
+
+Get intelligent text suggestions for headings and paragraphs in the Gutenberg editor.
 
 == Description ==
 This WordPress plugin leverages AI capabilities to provide intelligent text suggestions for headings and paragraphs in the Gutenberg editor. At the moment [Groq](https://console.groq.com/docs/quickstart) is the only AI provider supported by this plugin. The plugin aims to enhance writing quality and assist users in creating engaging content efficiently.
